@@ -5,7 +5,7 @@ on:
     branches:
       - 'main'
     tags:
-      - 'release'  # replace with your default branch if not 'main'
+      - 'v*'  # replace with your default branch if not 'main'
 
 jobs:
   build:
