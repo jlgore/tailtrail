@@ -15,12 +15,22 @@ import (
 var generateCmd = &cobra.Command{
 	Use:   "generate",
 	Short: "Generate a new configuration file",
-	Long: `A longer description that spans multiple lines and likely contains examples
-and usage of using your command. For example:
+	Long: `The 'generate' command creates a new configuration file named '.tailtrail.yaml' in the user's home directory. 
 
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+	This configuration file is used by the tailtrail application to connect to AWS services. The file contains the AWS profile and region that the tailtrail application should use when interacting with AWS.
+	
+	The 'generate' command requires two flags: 'profile' and 'region'. 
+	
+	The 'profile' flag specifies the AWS profile that the tailtrail application should use. This should match one of the profiles defined in your AWS credentials file.
+	
+	The 'region' flag specifies the AWS region that the tailtrail application should use. This should be a valid AWS region, such as 'us-east-1' or 'eu-west-1'.
+	
+	For example, you can run the 'generate' command like this:
+	
+	tailtrail generate --profile my-profile --region us-east-1
+	
+	This will create a '.tailtrail.yaml' file in your home directory with 'my-profile' as the profile and 'us-east-1' as the region.`,
+
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("generate called")
 
