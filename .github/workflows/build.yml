@@ -19,7 +19,7 @@ jobs:
         go-version: 1.21  # replace with your Go version
 
     - name: Build
-      run: go build -v -o tailtrail ./...
+      run: go build -v -o tailtrail 
 
     - name: Create Release
       id: create_release
