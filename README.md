@@ -24,4 +24,10 @@ aws:
     region: your-aws-region
 ```
 
+You can also generate a new configuration file with the 'generate' command:
+
+```
+tailtrail generate --profile your-aws-profile --region your-aws-region
+```
+
 Replace your-aws-profile with the name of your AWS profile, and your-aws-region with your AWS region (for example, us-east-1). This profile and region will be used by tailtrail to authenticate with AWS and tail user actions in AWS CloudTrail.
