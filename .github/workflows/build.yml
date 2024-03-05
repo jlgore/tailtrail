@@ -2,8 +2,6 @@ name: Build and Upload Artifact
 
 on:
   push:
-    branches:
-      - 'main'
     tags:
       - 'v*'  # replace with your default branch if not 'main'
 
