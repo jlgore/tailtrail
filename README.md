@@ -1,5 +1,7 @@
 # tailtrail
 
+golang app for exploring aws cloudtrail events
+
 ```
 
 ░▒▓████████▓▒░▒▓██████▓▒░░▒▓█▓▒░▒▓█▓▒░   ░▒▓████████▓▒░▒▓███████▓▒░ ░▒▓██████▓▒░░▒▓█▓▒░▒▓█▓▒░        
